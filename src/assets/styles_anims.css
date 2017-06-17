@@ -1,16 +1,3 @@
-body {
-    font-family: 'Voces', cursive !important;
-    text-align: center;
-    background-color: whitesmoke !important;
-}
-.logo {
-  width: 800px;
-}
-.container {
-  float: left; 
-  width: 100% !important;
-  margin: 10px;
-}
 
 /* éléments des animations */
 .animations {
@@ -28,16 +15,26 @@ body {
 .panneau {
   /*background: linear-gradient(white 0%, lightgrey 100%);*/
   border-radius: 5px;
-  padding: 20px;
+  padding: 20px 0px;
   margin-bottom: 30px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: left;
 
 }
+.top_panneau {
+  background-color: lightskyblue;
+}
 .panneau.a hover{
   text-decoration: none;
 }
+.infos {
+  margin : 0 10px;
+}
+.evenement {
+   margin: 0 10px;
+}
+.infos.reduit,
 .description.reduit,
 .lieu.reduit,
 .horaires.reduit,
@@ -60,10 +57,11 @@ hr.reduit {
   margin-right: 2px;
 }
 .titre {
+  font-family: 'Oswald', sans-serif;
   color: darkslategrey;
   font-size:x-large ;
   text-align: left;
-  margin-top: -10px;
+ /* margin-top: -10px;*/
   text-transform: uppercase;
   /*désactive la sélection du titre*/
   -webkit-user-select: none; 
@@ -119,7 +117,7 @@ hr.reduit {
 }
 
 .inscription {
-  color: slategrey;
+  color: whitesmoke;
   font-size: small;
   float: right;
 }

@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   getAnimations(): void {
     this.animationService
     .getAnimations()
-    .subscribe(res => {this.sortResult(res)},error=> console.error('Error: ' + error), ()=> console.log('finish!'));  
+    .subscribe(res => {this.sortResult(res)},error=> console.error('Error: ' + error), ()=> console.log('loading is finished with success!'));  
   }
   sortResult(anims: Animation[]): void {
     //this.animations = anims;

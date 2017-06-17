@@ -34,7 +34,7 @@ fxLayoutWrap="wrap">
                 </div>
                 <div fxFlex="80%" class="titre">{{animation.title}}</div>
             </div>
-            <div fxflex="100%" class="infos">
+            <div fxflex="100%" class="infos" [ngClass]="{'reduit': !animation.isOpen}">
                  <hr class="separateur" [ngClass]="{'reduit': !animation.isOpen}">
                  <div fxLayout="row"
                     fxLayoutWrap="noWrap"
