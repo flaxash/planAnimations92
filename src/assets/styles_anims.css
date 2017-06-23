@@ -4,6 +4,8 @@
   clear: left;
 }
 .titreAnim {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
   width: 100%;
   text-align: center;
   clear: both;
@@ -23,7 +25,29 @@
 
 }
 .top_panneau {
+  font-family: 'Titillium Web', sans-serif;
+  
+}
+.TICE {
   background-color: lightskyblue;
+}
+.numedu {
+  background-color: lightskyblue;
+  transform: skewX(-10deg);
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+.ressources {
+  background-color :lightgreen;
+  transform: skewX(-10deg);
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+.evenements {
+  background-color: lightsalmon;
+  transform: skewX(-10deg);
+  margin: 0px 10px;
+  padding: 0px 10px;
 }
 .panneau.a hover{
   text-decoration: none;
@@ -32,7 +56,8 @@
   margin : 0 10px;
 }
 .evenement {
-   margin: 0 10px;
+   margin: 0;
+   overflow: hidden;
 }
 .infos.reduit,
 .description.reduit,
@@ -57,10 +82,12 @@ hr.reduit {
   margin-right: 2px;
 }
 .titre {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   color: darkslategrey;
   font-size:x-large ;
   text-align: left;
+  font-style: italic;
+  padding : 0 5px;
  /* margin-top: -10px;*/
   text-transform: uppercase;
   /*désactive la sélection du titre*/
@@ -92,19 +119,26 @@ hr.reduit {
 	border-top: 1px dashed #8c8b8b;
   width: 100%;
 }
-.jour {
-  font-size: 3.5em;
-  margin-top: -8px;
-  font-stretch: condensed !important;
-  color: white;
+.date {
+   background-color: whitesmoke;
+   transform : skewX(-10deg);
+   margin-left: -15px;
 }
-.mois {
+.jour {
+  font-size: 3em;
+  margin-top: -8px;
+  padding-left:20px;
+  font-stretch: condensed !important;
+  color:lightskyblue;
+  text-align: center;
+}
+/*.mois {
   font-size: small;
   text-transform: uppercase;
   margin-top: -15px;
   color: white;
-}
-.circle {
+}*/
+/*.circle {
   background: darkslategrey;
   display: table-cell;
   margin: -15px 10px 0 -15px;
@@ -113,22 +147,32 @@ hr.reduit {
   border-radius: 50%;
   text-align: center;
   position: relative;
-	/* width and height can be anything, as long as they're equal */
-}
-
+}*/
 .inscription {
   color: whitesmoke;
   font-size: small;
   float: right;
+  margin-right:-4px;
+  width: 120px;
 }
 .plusinfos {
   float:right;
+  margin-left:-4px;
 }
-
-.image {
+.carre_100 {
   width: 100px;
   height: 100px;
+  overflow: hidden;
 }
+.image {
+  height: 100px;
+  width: 100px;
+  margin: 15px 0 0 0;
+  object-fit: cover
+  height: auto;
+
+}
+
 
 blockquote {
   white-space: pre-line;
@@ -173,6 +217,14 @@ blockquote {
 }
 .filtres {
   padding-top: 30px;
+}
+.filtres div {
+  padding-top:5px;
+  font-size: 1.5em;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  color:darkslategrey;
 }
 
 [type="checkbox"] {

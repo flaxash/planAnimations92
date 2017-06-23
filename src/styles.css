@@ -5,10 +5,13 @@ body {
     background-color: whitesmoke !important;
 }
 .logo {
-  width: 800px;
+  width: 100%;
 }
 .container {
   float: left; 
   width: 100% !important;
   margin: 10px;
+}
+input {
+  font-size: 2em;
 }
