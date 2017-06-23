@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    font-family: 'Exo', sans-serif !important;
+    font-family: 'caecilia-roman', sans-serif !important;
     text-align: center;
     background-color: whitesmoke !important;
 }
@@ -13,5 +13,48 @@ body {
   margin: 10px;
 }
 input {
-  font-size: 2em;
+  font-size: 1.5em;
+}
+@font-face {
+font-family: 'simplon-bold';
+src: url('assets/fonts/Simplon-Bold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'simplon-regular';
+src: url('assets/fonts/Simplon-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'simplon-medium';
+src: url('assets/fonts/Simplon-Medium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'caecilia-roman';
+src: url('assets/fonts/Caecilia-Roman.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'caecilia-bold';
+src: url('assets/fonts/Caecilia-Bold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'caecilia-italic';
+src: url('assets/fonts/Caecilia-Italic.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 }

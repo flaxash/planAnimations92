@@ -3,12 +3,17 @@
 .animations {
   clear: left;
 }
-.titreAnim {
-  font-family: 'Titillium Web', sans-serif;
+.moisAnims {
+  font-family: 'simplon-regular', sans-serif;
   font-style: normal;
+  text-transform: uppercase;
   width: 100%;
+  height: 45px;
+  padding-top: 5px;
   text-align: center;
   clear: both;
+  background-color: rgb(0, 105, 120);
+  color:white;
 }
 .clear {
   clear: both;
@@ -22,32 +27,45 @@
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: left;
+  overflow: hidden;
+
 
 }
 .top_panneau {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'simplon-regular', sans-serif;
   
 }
-.TICE {
-  background-color: lightskyblue;
-}
 .numedu {
-  background-color: lightskyblue;
-  transform: skewX(-10deg);
+  background-color: rgb(202,108,0);
+  color: white;
   margin: 0px 10px;
   padding: 0px 10px;
 }
 .ressources {
-  background-color :lightgreen;
-  transform: skewX(-10deg);
+  background-color: rgb(187,84,96);
+  color: white;
   margin: 0px 10px;
   padding: 0px 10px;
 }
 .evenements {
-  background-color: lightsalmon;
-  transform: skewX(-10deg);
+  background-color: rgb(69,58,141);;
+  color: white;
   margin: 0px 10px;
   padding: 0px 10px;
+}
+
+.TICE {
+  background-color:  rgb(202,108,0);
+  color: white;
+}
+
+.Ress {
+  background-color :rgb(187,84,96);
+  color:white;
+}
+.Évèn {
+  background-color:rgb(69,58,141);
+  color: white;
 }
 .panneau.a hover{
   text-decoration: none;
@@ -58,6 +76,7 @@
 .evenement {
    margin: 0;
    overflow: hidden;
+   font-family: 'caecilia-roman', sans-serif;
 }
 .infos.reduit,
 .description.reduit,
@@ -82,8 +101,8 @@ hr.reduit {
   margin-right: 2px;
 }
 .titre {
-  font-family: 'Titillium Web', sans-serif;
-  color: darkslategrey;
+  font-family: 'simplon--medium', sans-serif;
+  color: white;
   font-size:x-large ;
   text-align: left;
   font-style: italic;
@@ -104,16 +123,18 @@ hr.reduit {
   
 }
 .lieu {
+  font-family : "caecilia-italic";
   padding-top: 6px;
   font-weight: bold !important;
   font-size: medium;
 }
 
 .horaires {
+  font-family : "caecilia-bold";
   font-weight: bold !important;
   font-size: medium;
   padding-top: 6px;
-  text-align: right;
+  text-align: left;
 }
 .separateur {
 	border-top: 1px dashed #8c8b8b;
@@ -122,15 +143,31 @@ hr.reduit {
 .date {
    background-color: whitesmoke;
    transform : skewX(-10deg);
-   margin-left: -15px;
+   margin-left: -25px;
+   margin-right:0px;
 }
 .jour {
+  font-family: 'simplon-bold', sans-serif;
   font-size: 3em;
   margin-top: -8px;
-  padding-left:20px;
+  padding-left:40px;
+  background-color:none;
   font-stretch: condensed !important;
-  color:lightskyblue;
-  text-align: center;
+  text-align: right;
+  width: 100%;
+  padding-right: 5px;
+}
+.TICE label {
+  color:  rgb(202,108,0);
+  background-color: whitesmoke;
+}
+.Ress label {
+  color :rgb(187,84,96);
+  background-color:whitesmoke;
+}
+.Évèn label {
+  color:rgb(69,58,141);
+  background-color: whitesmoke;
 }
 /*.mois {
   font-size: small;
@@ -151,9 +188,13 @@ hr.reduit {
 .inscription {
   color: whitesmoke;
   font-size: small;
-  float: right;
+  position: absolute;
   margin-right:-4px;
   width: 120px;
+  bottom: 12px;
+  right: -4px;
+  background-color: rgb(0, 105, 120) !important;
+  border-color: rgb(0, 105, 120) !important;
 }
 .plusinfos {
   float:right;
@@ -167,10 +208,9 @@ hr.reduit {
 .image {
   height: 100px;
   width: 100px;
-  margin: 15px 0 0 0;
-  object-fit: cover
+  margin: 5px 0 0 0;
+  object-fit: cover;
   height: auto;
-
 }
 
 
@@ -221,10 +261,10 @@ blockquote {
 .filtres div {
   padding-top:5px;
   font-size: 1.5em;
-  font-family: 'Titillium Web', sans-serif;
-  font-style: italic;
+  font-family : "simplon-regular";
+  /*font-family: 'Titillium Web', sans-serif;
+  font-style: italic;*/
   text-transform: uppercase;
-  color:darkslategrey;
 }
 
 [type="checkbox"] {
