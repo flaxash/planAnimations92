@@ -3,6 +3,15 @@
 .animations {
   clear: left;
 }
+/* couleurs */
+/* 
+bleu : 98	198	232		
+rose : 247	108	156	
+orange : 238	113	42	
+vert pale : 103	190	163	
+rouge : 230	51	41
+*/
+
 .moisAnims {
   font-family: 'simplon-regular', sans-serif;
   font-style: normal;
@@ -12,8 +21,8 @@
   padding-top: 5px;
   text-align: center;
   clear: both;
-  background-color: rgb(0, 105, 120);
-  color:white;
+  background-color: white;
+  color:rgb(20,72,72);
 }
 .clear {
   clear: both;
@@ -24,7 +33,7 @@
   border-radius: 5px;
   padding: 20px 0px;
   margin-bottom: 30px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
   position: relative;
   text-align: left;
   overflow: hidden;
@@ -33,40 +42,64 @@
 }
 .top_panneau {
   font-family: 'simplon-regular', sans-serif;
-  
+  border-radius: 4px;
+  cursor: pointer;
 }
-.numedu {
-  background-color: rgb(202,108,0);
+.mdn-info {
+  background-color:  rgb(238,113,42);
   color: white;
   margin: 0px 10px;
   padding: 0px 10px;
 }
-.ressources {
-  background-color: rgb(187,84,96);
+.masterclasse-info {
+  background-color: rgb(98,198,232);
   color: white;
   margin: 0px 10px;
   padding: 0px 10px;
 }
-.evenements {
-  background-color: rgb(69,58,141);;
+.conference-info {
+  background-color: rgb(247,108,156);
+  color: white;
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+.animation-info {
+  background-color: rgb(103,190,163);
   color: white;
   margin: 0px 10px;
   padding: 0px 10px;
 }
 
-.TICE {
-  background-color:  rgb(202,108,0);
+div.mdn {
+  background-color:   rgb(238,113,42);
   color: white;
 }
+label.mdn {
+  color : rgb(238,113,42);
+}
 
-.Ress {
-  background-color :rgb(187,84,96);
+div.masterclasse {
+  background-color :rgb(98,198,232);
   color:white;
 }
-.Évèn {
-  background-color:rgb(69,58,141);
+label.masterclasse {
+  color : rgb(98,198,232);
+}
+div.conference {
+  background-color:rgb(247,108,156);
   color: white;
 }
+label.conference {
+  color:rgb(247,108,156);
+}
+div.animation {
+  background-color:rgb(103,190,163);
+  color: white;
+}
+label.animation {
+  color : rgb(103,190,163);
+}
+
 .panneau.a hover{
   text-decoration: none;
 }
@@ -100,126 +133,95 @@ hr.reduit {
   color: darkred;
   margin-right: 2px;
 }
+.jour {
+  font-family: 'simplon-bold', sans-serif;
+  font-size: 5em;
+  background-color:none;
+  font-stretch: condensed !important;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+  margin-top : -15px;
+}
 .titre {
   font-family: 'simplon--medium', sans-serif;
   color: white;
-  font-size:x-large ;
+  font-size:large ;
   text-align: left;
-  font-style: italic;
-  padding : 0 5px;
- /* margin-top: -10px;*/
+  padding-right: 30px;
   text-transform: uppercase;
-  /*désactive la sélection du titre*/
-  -webkit-user-select: none; 
-  -khtml-user-select: none;
-  -moz-user-select: none; 
-  -o-user-select: none;
-  user-select: none; 
+  margin:auto;
 }
 .description {
   font-size: medium;
   box-sizing: content-box;
   text-align: justify !important;
-  
 }
 .lieu {
-  font-family : "caecilia-italic";
+  font-family : "caecilia-bold";
   padding-top: 6px;
   font-weight: bold !important;
   font-size: medium;
 }
-
 .horaires {
   font-family : "caecilia-bold";
   font-weight: bold !important;
-  font-size: medium;
+  font-size: x-large;
   padding-top: 6px;
+  padding-left: 5px;
   text-align: left;
 }
 .separateur {
 	border-top: 1px dashed #8c8b8b;
   width: 100%;
 }
-.date {
-   background-color: whitesmoke;
-   transform : skewX(-10deg);
-   margin-left: -25px;
-   margin-right:0px;
+.espace {
+  height: 20px;
+  border: none;
 }
-.jour {
-  font-family: 'simplon-bold', sans-serif;
-  font-size: 3em;
-  margin-top: -8px;
-  padding-left:40px;
-  background-color:none;
-  font-stretch: condensed !important;
-  text-align: right;
-  width: 100%;
-  padding-right: 5px;
-}
-.TICE label {
-  color:  rgb(202,108,0);
-  background-color: whitesmoke;
-}
-.Ress label {
-  color :rgb(187,84,96);
-  background-color:whitesmoke;
-}
-.Évèn label {
-  color:rgb(69,58,141);
-  background-color: whitesmoke;
-}
-/*.mois {
-  font-size: small;
-  text-transform: uppercase;
-  margin-top: -15px;
-  color: white;
-}*/
-/*.circle {
-  background: darkslategrey;
-  display: table-cell;
-  margin: -15px 10px 0 -15px;
-  width: 80px;
-  height:80px;
-  border-radius: 50%;
-  text-align: center;
-  position: relative;
-}*/
 .inscription {
   color: whitesmoke;
   font-size: small;
+  /*
   position: absolute;
   margin-right:-4px;
-  width: 120px;
   bottom: 12px;
   right: -4px;
+  */
+  width: 150px;
   background-color: rgb(0, 105, 120) !important;
   border-color: rgb(0, 105, 120) !important;
+}
+a.btnAction, a.btnAction:link, a.btnAction:visited, a.btnAction:hover, a.btnAction:active  {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 5px 45px 5px 15px;
+  background-image: url(../assets/white-arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 .plusinfos {
   float:right;
   margin-left:-4px;
 }
-.carre_100 {
+.rect_100 {
   width: 100px;
-  height: 100px;
+  height: 140px;
   overflow: hidden;
 }
 .image {
-  height: 100px;
   width: 100px;
-  margin: 5px 0 0 0;
   object-fit: cover;
   height: auto;
 }
-
-
 blockquote {
   white-space: pre-line;
 }
-
-
-
+.date {
+  background-color: whitesmoke;
+  margin-right:0px;
+}
 /* Recherche et filtres */
 [type="search"] {
    -webkit-appearance: textfield;

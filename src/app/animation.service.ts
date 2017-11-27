@@ -14,7 +14,7 @@ import { Animation } from './animation';
 @Injectable()
 export class AnimationService {
 
-  //private animationsUrl = 'https://www.reseau-canope.fr/atelier-hauts-de-seine/drupal7/?q=gateway/views/animations.json';
+  //private animationsUrl = 'https://www.reseau-canope.fr/atelier-hauts-de-seine/drupal7/?q=gateway/views/anims2017.json';
   private animationsUrl = 'assets/animations.json';
   constructor(private http: Http) { }
 
@@ -37,8 +37,8 @@ export class AnimationService {
         if (animations) {
           //console.log(animations);
           animations.forEach((m) => {
-            result.push(new Animation(m.nid, m.title, m.field_categorie, m.field_docs_joints, m.field_horaire, m.field_jour, m.body,
-              m.field_lien, m.field_lieu, m.field_mois, m.field_sstitre, m.field_urlinscription, m.field_image, false));
+            result.push(new Animation(m.nid, m.title, m.field_type, m.field_docs_joints, m.field_horaire, m.field_jour, m.body,
+              m.field_lien, m.field_localisation, m.field_mois, m.field_sstitre, m.field_urlinscription, m.field_image, false));
               //console.log(result[result.length-1].nid);
           });
         }

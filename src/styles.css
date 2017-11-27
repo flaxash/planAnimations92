@@ -3,9 +3,24 @@ body {
     font-family: 'caecilia-roman', sans-serif !important;
     text-align: center;
     background-color: whitesmoke !important;
+    min-width: 450px;
 }
 .logo {
-  width: 100%;
+  max-width: 50%;
+  max-height: 400px;
+}
+h1, h2 {
+  font-family: 'simplon-regular';
+}
+.localisation {
+  max-width: 50%;
+  overflow: hidden;
+}
+.container_logo {
+  float: left; 
+  text-align: left;
+  width: 100% !important;
+  margin: 10px;
 }
 .container {
   float: left; 
@@ -15,6 +30,24 @@ body {
 input {
   font-size: 1.5em;
 }
+button.btn_dl {
+  margin-top: 10px;
+  background: url("assets/affiche2017-2018_small.png") no-repeat center; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  border-style: none;
+  border: 0px;
+  border-radius: 8px;
+ 
+}
+a.affiche, a.affiche:link, a.affiche:visited, a.affiche:hover, a.affiche:active  {
+  color:white;
+  font-family: 'simplon-regular';
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 @font-face {
 font-family: 'simplon-bold';
 src: url('assets/fonts/Simplon-Bold.woff') format('woff');

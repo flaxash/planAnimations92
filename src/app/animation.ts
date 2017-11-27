@@ -1,7 +1,7 @@
 export interface AnimationInterface {
     nid: number,
     title: string,
-    field_categorie:string,
+    field_type:string,
     field_docs_joints: string,
     field_horaire: string,
     field_jour: number,
@@ -20,7 +20,7 @@ export class Animation implements AnimationInterface {
     constructor(
     public nid: number,
     public title: string,
-    public field_categorie:string,
+    public field_type:string,
     public field_docs_joints: string,
     public field_horaire: string,
     public field_jour: number,

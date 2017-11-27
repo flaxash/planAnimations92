@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
   animationsMars:Animation[];
   animationsAvril:Animation[];
   animationsMai:Animation[];
+ 
 
   constructor(private animationService: AnimationService) { }
 
@@ -75,13 +76,13 @@ export class AppComponent implements OnInit {
     return (element.field_mois == "Novembre")
   }
   isDecembre(element:Animation, index:Number, array:Animation []):boolean {
-    return (element.field_mois == "Decembre")
+    return (element.field_mois == "Décembre")
   }
   isJanvier(element:Animation, index:Number, array:Animation []):boolean {
     return (element.field_mois == "Janvier")
   }
   isFevrier(element:Animation, index:Number, array:Animation []):boolean {
-    return (element.field_mois == "Fevrier")
+    return (element.field_mois == "Février")
   }
   isMars(element:Animation, index:Number, array:Animation []):boolean {
     return (element.field_mois == "Mars")
