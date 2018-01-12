@@ -14,8 +14,8 @@ import { Animation } from './animation';
 @Injectable()
 export class AnimationService {
 
-  //private animationsUrl = 'https://www.reseau-canope.fr/atelier-hauts-de-seine/drupal7/?q=gateway/views/anims2017.json';
-  private animationsUrl = 'assets/animations.json';
+  private animationsUrl = 'https://www.reseau-canope.fr/atelier-hauts-de-seine/drupal7/?q=gateway/views/anims2017.json';
+  //private animationsUrl = 'assets/animations.json';
   constructor(private http: Http) { }
 
 
