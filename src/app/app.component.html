@@ -290,7 +290,78 @@ fxLayoutWrap="wrap">
                     </div>
                 </div>   
     </div>
-    
+    <hr class="separateur">
+     <h1 class="moisAnims">Mai 2018</h1>
+     <div class="animations" fxFlex="450px"   *ngFor="let animation of animationsMai" >
+            <div class="panneau"  >
+                    <div class="top_panneau" [ngClass]="animation.field_type"
+                        fxLayout="row"
+                        fxLayoutGap="8px"
+                        fxLayoutWrap="nowrap"
+                        (click)="reduit(animation)">
+                        <div fxFlex="100px" class="date">
+                            <label  class="jour" [ngClass]="animation.field_type">{{animation.field_jour}}</label>
+                        </div>
+                        <div fxFlex="300px" class="titre" >{{animation.title}}</div>
+                    </div>
+                    <div fxflex="100%" class="infos" [ngClass]="{'reduit': !animation.isOpen}">
+                        <div class="espace" [ngClass]="{'reduit': !animation.isOpen}"></div> 
+                         <div fxLayout="row"
+                            fxLayoutWrap="noWrap"
+                            fxLayoutAlign="end"
+                            fxLayoutGap="10px">
+                            <div fxFlex class="description" [ngClass]="{'reduit': !animation.isOpen }" [innerHTML]="animation.body"></div>
+                         </div>
+                         <div fxLayout="row" fxLayoutAlign="space-between center">
+                            <div fxLayout="column" fxFlex="300px">                    
+                                <div class="lieu" [ngClass]="{'reduit': !animation.isOpen }" [innerHTML]="animation.field_lieu"></div>
+                                <div class="horaires" [ngClass]="{'reduit': !animation.isOpen }">{{animation.field_horaire}} </div>
+                                <a class="btn btn-success inscription btnAction" [ngClass]="{'reduit': !animation.isOpen }" [href]="animation.field_urlinscription" target="_blank">inscription</a>
+                            </div>
+                            <div class="rect_100">
+                            <img class="image img-rounded" [ngClass]="{'reduit': !animation.isOpen }"[src]="animation.field_image" />
+                            </div>
+                         </div>
+                         <br/>
+                    </div>
+                </div>   
+    </div>
+    <hr class="separateur">
+    <h1 class="moisAnims">Juin 2018</h1>
+    <div class="animations" fxFlex="450px"   *ngFor="let animation of animationsJuin" >
+            <div class="panneau"  >
+                    <div class="top_panneau" [ngClass]="animation.field_type"
+                        fxLayout="row"
+                        fxLayoutGap="8px"
+                        fxLayoutWrap="nowrap"
+                        (click)="reduit(animation)">
+                        <div fxFlex="100px" class="date">
+                            <label  class="jour" [ngClass]="animation.field_type">{{animation.field_jour}}</label>
+                        </div>
+                        <div fxFlex="300px" class="titre" >{{animation.title}}</div>
+                    </div>
+                    <div fxflex="100%" class="infos" [ngClass]="{'reduit': !animation.isOpen}">
+                        <div class="espace" [ngClass]="{'reduit': !animation.isOpen}"></div> 
+                         <div fxLayout="row"
+                            fxLayoutWrap="noWrap"
+                            fxLayoutAlign="end"
+                            fxLayoutGap="10px">
+                            <div fxFlex class="description" [ngClass]="{'reduit': !animation.isOpen }" [innerHTML]="animation.body"></div>
+                         </div>
+                         <div fxLayout="row" fxLayoutAlign="space-between center">
+                            <div fxLayout="column" fxFlex="300px">                    
+                                <div class="lieu" [ngClass]="{'reduit': !animation.isOpen }" [innerHTML]="animation.field_lieu"></div>
+                                <div class="horaires" [ngClass]="{'reduit': !animation.isOpen }">{{animation.field_horaire}} </div>
+                                <a class="btn btn-success inscription btnAction" [ngClass]="{'reduit': !animation.isOpen }" [href]="animation.field_urlinscription" target="_blank">inscription</a>
+                            </div>
+                            <div class="rect_100">
+                            <img class="image img-rounded" [ngClass]="{'reduit': !animation.isOpen }"[src]="animation.field_image" />
+                            </div>
+                         </div>
+                         <br/>
+                    </div>
+                </div>   
+    </div>
    
 </div>
 

@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
   animationsMars:Animation[];
   animationsAvril:Animation[];
   animationsMai:Animation[];
+  animationsJuin:Animation[];
  
 
   constructor(private animationService: AnimationService) { }
@@ -63,6 +64,9 @@ export class AppComponent implements OnInit {
     
     this.animationsMai = anims.filter(this.isMai);
     this.animationsMai = this.animationsMai.sort(this.compareJour);   
+    
+    this.animationsJuin = anims.filter(this.isJuin);
+    this.animationsJuin = this.animationsJuin.sort(this.compareJour);   
   }
   compareJour(a:Animation, b:Animation) {
     if (Number(a.field_jour) > Number(b.field_jour)) { return 1;}
@@ -92,6 +96,9 @@ export class AppComponent implements OnInit {
   }
   isMai(element:Animation, index:Number, array:Animation []):boolean {
     return (element.field_mois == "Mai")
+  }
+  isJuin(element:Animation, index:Number, array:Animation []):boolean {
+    return (element.field_mois == "Juin")
   }
   reduit(animation:Animation):void {
     animation.isOpen=!animation.isOpen;
